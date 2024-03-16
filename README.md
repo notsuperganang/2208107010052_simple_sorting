@@ -1,74 +1,78 @@
-# Sorting Algorithms Performance Evaluation
+# Evaluasi Kinerja Algoritma Pengurutan
 
-This repository contains C code to evaluate the performance of three sorting algorithms: Bubble Sort, Selection Sort, and Insertion Sort. The code generates random numbers, sorts them using each algorithm, measures execution time, and saves the results to a text file.
+Repository ini berisi kode C untuk mengevaluasi kinerja tiga algoritma pengurutan: Bubble Sort, Selection Sort, dan Insertion Sort. Kode tersebut menghasilkan angka acak, mengurutkannya menggunakan setiap algoritma, mengukur waktu eksekusi, dan menyimpan hasilnya ke dalam file teks.
 
-## How to Run the Code
+## Cara Menjalankan Kode
 
-1. Ensure you have a C compiler installed on your system.
-2. Clone this repository or download the `sorting_algorithms.c` file.
-3. Compile the code using the following command:
+1. Pastikan Anda telah menginstal compiler C pada sistem Anda.
+2. Clone repositori ini atau unduh file `2208107010052_Simple_Sorting.c`.
+3. Kompilasi kode menggunakan perintah berikut:
 
    ```bash
-   gcc sorting_algorithms.c -o sorting_algorithms
+   gcc 2208107010052_Simple_Sorting.c -o sorting_algorithms
    ```
 
-4. Run the compiled executable:
+4. Jalankan executable yang telah dikompilasi:
 
    ```bash
    ./sorting_algorithms
    ```
 
-## Functions
+## Fungsi-fungsi
 
 ### `generateRandomNumbers`
 
-This function fills an array with random numbers using the `rand()` function.
+Fungsi ini mengisi sebuah array dengan angka acak menggunakan fungsi `rand()`.
 
-Parameters:
+Parameter:
 
-- `array`: Array to be filled with random numbers.
-- `size`: Size of the array to be filled.
-- `seed`: Seed for the `srand()` function.
+- `array`: Array yang akan diisi dengan angka acak.
+- `size`: Ukuran dari array yang akan diisi.
+- `seed`: Seed untuk fungsi `srand()`.
 
 ### `bubbleSort`
 
-This function sorts an array using the Bubble Sort algorithm.
+Fungsi ini mengurutkan sebuah array menggunakan algoritma Bubble Sort.
 
-Parameters:
+Parameter:
 
-- `array`: Array to be sorted.
-- `size`: Size of the array.
+- `array`: Array yang akan diurutkan.
+- `size`: Ukuran array.
 
 ### `selectionSort`
 
-This function sorts an array using the Selection Sort algorithm.
+Fungsi ini mengurutkan sebuah array menggunakan algoritma Selection Sort.
 
-Parameters:
+Parameter:
 
-- `array`: Array to be sorted.
-- `size`: Size of the array.
+- `array`: Array yang akan diurutkan.
+- `size`: Ukuran array.
 
 ### `insertionSort`
 
-This function sorts an array using the Insertion Sort algorithm.
+Fungsi ini mengurutkan sebuah array menggunakan algoritma Insertion Sort.
 
-Parameters:
+Parameter:
 
-- `array`: Array to be sorted.
-- `size`: Size of the array.
+- `array`: Array yang akan diurutkan.
+- `size`: Ukuran array.
 
 ### `saveToFile`
 
-This function saves an array to a text file.
+Fungsi ini menyimpan sebuah array ke dalam file teks.
 
-Parameters:
+Parameter:
 
-- `filename`: Destination file name.
-- `array`: Array to be saved.
-- `size`: Size of the array.
-- `type`: Type of the array ("unsorted" for before sorting, "sorted" for after sorting).
-- `sort_type`: Sorting algorithm used.
+- `filename`: Nama file tujuan.
+- `array`: Array yang akan disimpan.
+- `size`: Ukuran array.
+- `type`: Tipe array ("unsorted" untuk sebelum pengurutan, "sorted" untuk setelah pengurutan).
+- `sort_type`: Algoritma pengurutan yang digunakan.
 
-## Main Function
+## Fungsi Utama
 
-The `main` function is used to test the performance of the sorting algorithms. It evaluates the execution time of each algorithm for array sizes ranging from 100,000 to 1,000,000 with increments of 100,000.
+Fungsi `main` digunakan untuk menguji kinerja dari algoritma pengurutan. Ini mengevaluasi waktu eksekusi dari setiap algoritma untuk ukuran array mulai dari 100,000 hingga 1,000,000 dengan peningkatan sebesar 100,000.
+
+## Lisensi
+
+Kode dalam repository ini dilisensikan di bawah [MIT License](LICENSE).
