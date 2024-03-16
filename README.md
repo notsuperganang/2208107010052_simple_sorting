@@ -1,4 +1,3 @@
-````markdown
 # Sorting Algorithms Performance Evaluation
 
 This repository contains C code to evaluate the performance of three sorting algorithms: Bubble Sort, Selection Sort, and Insertion Sort. The code generates random numbers, sorts them using each algorithm, measures execution time, and saves the results to a text file.
@@ -12,6 +11,7 @@ This repository contains C code to evaluate the performance of three sorting alg
    ```bash
    gcc sorting_algorithms.c -o sorting_algorithms
    ```
+
 ````
 
 4. Run the compiled executable:
@@ -78,3 +78,4 @@ The `main` function is used to test the performance of the sorting algorithms. I
 ```
 
 ```
+````
